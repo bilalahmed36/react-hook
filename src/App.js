@@ -7,7 +7,7 @@ function App() {
   let [isMorning, setMorning] = useState(true);
   return (
     <div className={`App-header ${isMorning ? 'App' : ''}`}>
-      <h3>Day Status = {isMorning ? 'Morning' : 'Night'}</h3>
+      <h3>Have A Good {isMorning ? 'Morning' : 'Night'}</h3>
       <Candy counter = {count}/>
       <button onClick = {() => setCount(++count)}>Add More</button>
       <br/>
